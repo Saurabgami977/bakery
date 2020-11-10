@@ -24,6 +24,20 @@ btn.forEach(button => {
     })
 })
 
+search.addEventListener('input', find);
+
+function find() {
+    storeItems.forEach(item => {
+        text = item.classList.toString();
+        if (text.includes(`${search.value}`)) {
+            item.style.display = 'block'
+            item.style.margin = '2px 30px'
+        } else {
+            item.style.display = 'none'
+        }
+    });
+}
+
 function show(food) {
     storeItems.forEach(item => {
         if (item.classList.contains(food)) {
