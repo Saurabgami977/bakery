@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kaushan Script", cursive;
+  background-color: #fff;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 25px;
+}
+
+.logo {
+  height: 4rem;
+  width: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  text-decoration: none;
+  color: #ef7998;
+  padding: 5px;
+  font-size: 25px;
+  margin: 0px 5px;
+}
+
+.menu:hover {
+  color: black;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  margin: 0px 28px;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  margin: 0px 28px;
+  font-size: 15px;
+  border: 2px solid black;
+  height: 40px;
+  font-weight: bold;
+  padding: 2px 9px;
+  border-radius: 5px;
+  margin: 2px 7px;
+}
+
+.cartImg {
+  width: 20px;
+  height: 20px;
+  color: black;
+  padding: 2px 8px;
+}
+
+.cart:hover {
+  color: white;
+  background-color: #ef7998;
+}
+
+.banner {
+    height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  min-height: calc(100vh - 76vh);
+  position: relative;
+  background: linear-gradient(rgba(249, 228, 148, 0.5), rgba(249, 228, 148, 0.5)), url(img/bg.jpeg) center center/cover; 
+  position: relative;
+}
+
+.banner-title{
+    color: #ef7998;
+    font-size: 3.5rem;
+}
+
+.banner-link{
+    color: black;
+    border: 2px solid black;
+    padding: 7px;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+.banner-link:hover{
+    color: #ef7998;
+    background-color: black;
+}
+
+.about{
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+    margin: 15px 5px;
+}
+
+.rightAbout{
+    margin: 3px 10px;
+    position: relative;
+    margin: 10px 5px;
+}
+
+.rightAbout > img{
+    height: 405px;
+    width: 540px;
+    
+}
+.rightAbout::before{
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.7rem;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid rgb(249, 228, 148);
+    z-index: -1;
+    transition: all 1s ease-in-out;
+}
+
+.rightAbout:hover::before{
+    top: 0;
+    left: 0;
+}
+
+.left{
+    width: 600px;
+}
+
+.right > img{
+    width: 540px;
+    height: 405px;
+}
+
+.store{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foodsbtn{
+    margin: 2px 15px;
+    padding: 3px 15px;
+}
+.search{
+    display: flex;
+    margin: 20px 3px;
+}
+
+.search > img{
+    background-color: #ef7998;
+    padding: 13px;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+}
+
+.searchTxt{
+    width: 500px;
+    border-radius: 3px;
+    font-family: "Kaushan Script", cursive;
+    font-size: large;
+    padding: 2px 5px;
+}
+.store{
+  
+  background-color: rgb(238, 238, 238);
+}
+.foods{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.store-item{
+  margin: 25px 0px;
+  border: 1px solid black;
+}
+
+.store-img{
+  width: 404px;
+  height: 305px;
+}
+
+.card-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2px 10px;
+  font-size: 2rem;
+  height: 80px;
+  align-items: center;
+}
+
+.imgcart{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: rgb(249, 228, 148);
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.store-img {
+  transition: all 1s ease-in-out;
+}
+.img-container:hover .store-img {
+  transform: scale(1.2);
+}
+
+.img-container:hover .store-item-icon {
+  transform: translate(0, 0);
+}
+
+.store-item-icon:hover{
+  color: white;
+}
+
+.store-item-value {
+  color: rgb(249, 228, 148);
+}
+

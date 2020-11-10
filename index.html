@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div>
+            <img class="logo" src="img/logo.png" alt="Bakery">
+        </div>
+        <div class="menus" id="menu">
+            <a class="menu" href="#">Home</a>
+            <a class="menu" href="#about">About</a>
+            <a class="menu" href="#store">Store</a>
+        </div>
+        <div class="right">
+            <a class="phone" id="phone" href="tel:+977-9861484326">+977-9861484326</a>
+            <a class="cart" id="cart"> <img class="cartImg" id="cartImg" src="img/cart.svg" alt="cart"> 2
+                Items-$10.49</a>
+        </div>
+    </nav>
+    <div class="banner">
+        <h1 class="banner-title-start">Welcome To <strong class="banner-title ">SAURAB's</strong></h1>
+        <a href="#store" class="banner-link">EXPLORE</a>
+    </div>
+    <div class="about" id="about">
+        <div class="left">
+            <h1 class="abouttitle">About <span class="about-title-us">Us</span></h1>
+            <p class="aboutpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit exercitationem
+                adipisci. A facilis minima quam tempore explicabo similique hic nihil dolorem aliquid aliquam et
+                cupiditate non modi eligendi, eveniet dolor maxime dolores deleniti voluptatum quibusdam quae sit veniam
+                placeat. Dignissimos cupiditate saepe perferendis numquam natus, deserunt tempore at eveniet?</p>
+            <a href="#store" class="banner-link">EXPLORE</a>
+        </div>
+        <div class="rightAbout">
+            <img src="img/sweets-1.jpeg" alt="">
+        </div>
+    </div>
+    <div class="store" id="store">
+        <div class="storetitle">
+            <h1 class="title">Our <span class="store-title-color">Store</span></h1>
+        </div>
+        <div class="options" id="options">
+            <a href="#store" class="banner-link foodsbtn" data-filter="all">All</a>
+            <a href="#store" class="banner-link foodsbtn" data-filter="cakes">Cakes</a>
+            <a href="#store" class="banner-link foodsbtn" data-filter="cupcakes">Cupcakes</a>
+            <a href="#store" class="banner-link foodsbtn" data-filter="sweets">Sweets</a>
+            <a href="#store" class="banner-link foodsbtn" data-filter="doughnuts">Doughnuts</a>
+        </div>
+        <div class="search">
+            <img src="img/search.svg" alt="">
+            <input class="searchTxt" type="text" name="search" id="search" placeholder="item...">
+        </div>
+        <div class="foods">
+            <!-- single item -->
+            <div class="store-item sweets" data-item="sweets">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="img/sweets-1.jpeg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                            <img src="img/cart.svg" alt="" class="imgcart store-item-icon">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h5 id="store-item-name">sweet item</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                    class="font-weight-bold">5</strong>
+                            </h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="store-item cupcakes" data-item="cupcakes">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="img/cupcake-1.jpeg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                            <img src="img/cart.svg" alt="" class="imgcart store-item-icon">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h5 id="store-item-name">cupcake item</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                    class="font-weight-bold">5</strong>
+                            </h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="store-item cakes" data-item="cakes">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="img/cake-1.jpeg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                            <img src="img/cart.svg" alt="" class="imgcart store-item-icon"> </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h5 id="store-item-name">cake item</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                    class="font-weight-bold">5</strong>
+                            </h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="store-item doughnuts" data-item="doughnuts">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="img/doughnut-1.jpeg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                            <img src="img/cart.svg" alt="" class="imgcart store-item-icon"> </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text>
+                            <h5 id="store-item-name">doughnut item</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                    class="font-weight-bold">5</strong>
+                            </h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="store-item sweets" data-item="sweets">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="img/sweets-2.jpeg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                            <img src="img/cart.svg" alt="" class="imgcart store-item-icon"> </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h5 id="store-item-name">sweet item</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                    class="font-weight-bold">10</strong>
+                            </h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="store-item cupcakes" data-item="cupcakes">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="img/cupcake-2.jpeg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                            <img src="img/cart.svg" alt="" class="imgcart store-item-icon"> </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h5 id="store-item-name">cupcake item</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                    class="font-weight-bold">10</strong>
+                            </h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="store-item cakes" data-item="cakes">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="img/cake-2.jpeg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                            <img src="img/cart.svg" alt="" class="imgcart store-item-icon"> </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text ">
+                            <h5 id="store-item-name">cake item</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                    class="font-weight-bold">10</strong>
+                            </h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="store-item doughnuts" data-item="dougnuts">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="img/doughnut-2.jpeg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                            <img src="img/cart.svg" alt="" class="imgcart store-item-icon"> </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h5 id="store-item-name">dougnut item</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                    class="font-weight-bold">10</strong>
+                            </h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="store-item sweets" data-item="sweets">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="img/sweets-3.jpeg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                            <img src="img/cart.svg" alt="" class="imgcart  store-item-icon"> </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h5 id="store-item-name">sweet item</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                    class="font-weight-bold">15</strong>
+                            </h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="store-item cupcakes" data-item="cupcakes">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="img/cupcake-3.jpeg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                            <img src="img/cart.svg" alt="" class="imgcart store-item-icon"> </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h5 id="store-item-name">cupcake item</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                    class="font-weight-bold">15</strong>
+                            </h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="store-item cakes" data-item="cakes">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="img/cake-3.jpeg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                            <img src="img/cart.svg" alt="" class="imgcart store-item-icon"> </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text ">
+                            <h5 id="store-item-name">cake item</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                    class="font-weight-bold">15</strong>
+                            </h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="store-item doughnuts" data-item="dougnuts">
+                <div class="card ">
+                    <div class="img-container">
+                        <img src="img/doughnut-3.jpeg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon">
+                            <img src="img/cart.svg" alt="" class="imgcart store-item-icon"> </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h5 id="store-item-name">dougnut item</h5>
+                            <h5 class="store-item-value">$ <strong id="store-item-price"
+                                    class="font-weight-bold">15</strong>
+                            </h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end of card-->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
